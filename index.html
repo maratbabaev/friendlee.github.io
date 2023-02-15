@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendlee Test</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <main class="wrap">
+        <section class="app">
+            <h1>Рассчитайте стоимость автомобиля в лизинг</h1>
+            <form class="main-form">
+                <div class="form-row form-row__1">
+                    <div class="range form-block">
+                        <span class="range-title">Стоимость автомобиля</span>
+                        <div class="range-row">
+                            <input class='range-text range-input' type="text" name="num1" value="3 300 000">
+                            <span>₽</span>
+                            <input type="range" min="1500000" max="10000000" value="3300000" step="100000" name="range1">
+                            <div class="range-line"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="range form-block range-proc">
+                        <span class="range-title">Первоначальный взнос</span>
+                        <div class="range-row">
+                            <input class='range-text range-text__proc' type="text" name="num2">
+                            <input type="text" class="range-procent range-input" name="procent" value="13 %">
+                            <input type="range" min='10' max='60' value="13" step="1" name="range2">
+                            <div class="range-line"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="range form-block">
+                        <span class="range-title">Срок лизинга</span>
+                        <div class="range-row">
+                            <input class='range-text range-input' type="text" name="num3" value="60">
+                            <span>мес.</span>
+                            <input type="range" min="6" max="120" value="60" step="1" name="range3">
+                            <div class="range-line"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row form-row__2">
+                    <div class="input form-block">
+                        <span class="range-title">Сумма договора лизинга</span>
+                        <input type="text" name="res1" value="">
+                    </div>
+                    <div class="input form-block">
+                        <span class="range-title">Ежемесячный платеж от</span>
+                        <input type="text" name="res2" value="">
+                    </div>
+                    <div class="form-block form-block__btn">
+                        <button class="form-btn not-active">
+                            <span>Оставить заявку</span>
+                            <img src="./img/Ellipse 112.svg">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
